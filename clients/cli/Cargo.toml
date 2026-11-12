@@ -1,0 +1,16 @@
+[package]
+name = "loadin-cli"
+version.workspace = true
+edition.workspace = true
+
+[[bin]]
+name = "loadin"
+path = "src/main.rs"
+
+[dependencies]
+loadin-core.workspace = true
+
+serde.workspace = true
+tokio.workspace = true
+
+clap = { version = "4.6", features = ["derive"] }
